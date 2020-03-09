@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hajimemashite, anon-san!</title>
+	
+  </head>
+  <body>
+  <nav>
+    <a href="https://www.youtube.com/watch?v=g0WmiI2QUw0" class="a1">Enter E G G D O G</a>
+	</nav>
+	<br>
+	
+	<button onclick = "maybeNextTime()"> Press to die instantly </button>
+	<p id="diediedie"></p>
+	
+
+<script>
+function maybeNextTime() {
+  document.getElementById("diediedie").innerHTML = "Too bad, maybe next time :(";
+}
+</script>
+
+	<hr/>
+	
+	<button onclick = "fancyRemove()" type="button" Class="btn btn-primary">
+    Press to die in a fancy way
+    </button>
+	<p id="fancydie"></p>
+	
+<script>
+function fancyRemove() {
+  var texttext = document.getElementById("diediedie")
+  texttext.remove()
+  document.getElementById("fancydie").innerHTML = "Still nothing ;-;";
+    var x = document.createElement("IMG");
+  x.setAttribute("src", "ddd.png");
+  x.setAttribute("width", "250");
+  x.setAttribute("alt", "you tried");
+  document.body.appendChild(x);
+
+}
+</script>
+
+<hr/>
+
+<p> Here's a list of things:</p>
+<ul id="List" class="example">
+  <li>E G G</li>
+  <li>G </li>
+  <li>G </>
+  </ul>
+  
+ <hr/>
+  
+  <p> Praise the eggdog</p>
+  <button onclick="popupPraise()">Praise</button>
+
+<p id="praise"></p>
+
+<script>
+function popupPraise() {
+  var txt;
+  if (confirm("Praise the eggdog")) {
+    txt = "Praise";
+  } else {
+    txt = "You heathen!";
+  }
+  document.getElementById("praise").innerHTML = txt;
+}
+</script>
+
+<hr/>
+
+<p>The woopers are doing it again</p>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button onclick="runningWithGabe()" id="lewyBtn" type="button" class="btn btn-secondary">Oh no! Run!</button>
+  <button onclick="saveMe()" id="srodkowyBtn"  type="button" class="btn btn-secondary">Save me, eggdog!</button>
+  <button onclick ="woopers()" id="prawyBtn"  type="button" class="btn btn-secondary">...show me.</button>
+</div>
+
+<script>
+function runningWithGabe() {
+  location.href = "https://www.youtube.com/watch?v=9u9vlj8CgS0";
+}
+</script>
+
+<script>
+function saveMe() {
+  location.href = "https://www.youtube.com/watch?v=DFPdtdY-a_c";
+}
+</script>
+
+
+<script>
+function woopers() {
+  location.href = "https://www.youtube.com/watch?v=buc64u6Q_oA";
+}
+</script>
+
+<hr/>
+
+
+<p>You can now address the E G G D O G yourself.<br>
+Don't worry, only he will know.</p>
+
+<input type="text" id="myInput" oninput="prayToEgg()">
+
+<p id="pray"></p>
+
+<script>
+function prayToEgg() {
+  var x = document.getElementById("myInput").value;
+  document.getElementById("pray").innerHTML = "Reflect on it: " + x;
+}
+</script>
+
+	<hr/>
+	
+	<div id="ttt"></div>
+
+<script>
+var x = "Fight me with your wheel!";  // String written inside quotes
+document.getElementById("ttt").innerHTML = x;
+</script>
+
+<script>
+document.getElementById("ttt").addEventListener("wheel", wheelScroll);
+
+function wheelScroll() {
+  var x="Haha! You LOSE!"
+  document.getElementById("ttt").innerHTML = x;
+  this.style.fontSize = "35px";
+}
+</script>
+
+<hr/>
+	
+	<p>Sign up to the best religion</p>
+	
+<form action="/action_page.php" method="get">
+  Name: <input type="text" oninvalid="alert('You must fill out the form!');" name="fname" required>
+  <input type="submit" value="Submit">
+</form>
+
+<p>If you dont submit your name and soul to the E G G D O G, the woopers will get you instead.</p>
+	
+	<hr/>
+	
+	<p>Arkham Knight is the best boy in the DC universe.</p>
+
+<button onclick="bestBoy()">Indeed</button>
+
+<p id="bold"></p>
+
+<script>
+function bestBoy() {
+  var str = "The cutest!";
+  var result = str.bold();
+  document.getElementById("bold").innerHTML = result;
+}
+</script>
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
